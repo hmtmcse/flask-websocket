@@ -14,7 +14,7 @@ env = os.environ.get('source')
 
 
 def get_dependencies():
-    dependency = ["Flask-SocketIO==5.3.6", "Flask==3.0.2", "gunicorn==21.2.0"]
+    dependency = ["Flask==3.0.2", "Flask-SocketIO==5.3.6", "gunicorn==21.2.0"]
 
     if env and env == "code":
         return dependency
