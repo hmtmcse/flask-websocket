@@ -6,7 +6,7 @@ from threading import Lock
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'secret!'
-socketio = SocketIO(app, debug=True, cors_allowed_origins='*')
+socketio = SocketIO(app, debug=True, cors_allowed_origins='*', path="pweb-socket")
 thread = None
 thread_lock = Lock()
 
